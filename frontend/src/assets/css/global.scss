@@ -1,0 +1,262 @@
+// 全局样式重置
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  color: $text-color;
+  background: linear-gradient(135deg, #F2F2F7 0%, #E5E5EA 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+// 链接样式
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-hover;
+  }
+
+  &:active {
+    color: $primary-active;
+  }
+}
+
+// 按钮基础样式
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+// 输入框基础样式
+input, textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+
+  &::placeholder {
+    color: $text-color-placeholder;
+  }
+}
+
+// 列表样式
+ul, ol {
+  list-style: none;
+}
+
+// 图片样式
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// 页面容器
+.page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 60px;
+}
+
+.page-content {
+  padding: 12px 8px;
+}
+
+// 卡片样式
+.card {
+  background: #ffffff;
+  border-radius: $border-radius-sm;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e1e8ed;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: #fafbfc;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-footer {
+  padding: 12px 16px;
+  border-top: 1px solid #e1e8ed;
+  background: #fafbfc;
+}
+
+// 分割线
+.divider {
+  height: 1px;
+  background-color: $border-color-light;
+  margin: $spacing-md 0;
+}
+
+// 文本样式
+.text-primary { color: $primary-color; }
+.text-secondary { color: $text-color-secondary; }
+.text-success { color: $success-color; }
+.text-danger { color: $danger-color; }
+.text-warning { color: $warning-color; }
+.text-info { color: $info-color; }
+
+.text-xs { font-size: $font-size-xs; }
+.text-sm { font-size: $font-size-sm; }
+.text-md { font-size: $font-size-md; }
+.text-lg { font-size: $font-size-lg; }
+.text-xl { font-size: $font-size-xl; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-bold { font-weight: $font-weight-bold; }
+.text-medium { font-weight: $font-weight-medium; }
+.text-normal { font-weight: $font-weight-normal; }
+
+// 间距工具类
+.m-0 { margin: 0; }
+.m-xs { margin: $spacing-xs; }
+.m-sm { margin: $spacing-sm; }
+.m-md { margin: $spacing-md; }
+.m-lg { margin: $spacing-lg; }
+.m-xl { margin: $spacing-xl; }
+
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: $spacing-xs; }
+.mt-sm { margin-top: $spacing-sm; }
+.mt-md { margin-top: $spacing-md; }
+.mt-lg { margin-top: $spacing-lg; }
+.mt-xl { margin-top: $spacing-xl; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: $spacing-xs; }
+.mb-sm { margin-bottom: $spacing-sm; }
+.mb-md { margin-bottom: $spacing-md; }
+.mb-lg { margin-bottom: $spacing-lg; }
+.mb-xl { margin-bottom: $spacing-xl; }
+
+.p-0 { padding: 0; }
+.p-xs { padding: $spacing-xs; }
+.p-sm { padding: $spacing-sm; }
+.p-md { padding: $spacing-md; }
+.p-lg { padding: $spacing-lg; }
+.p-xl { padding: $spacing-xl; }
+
+// 布局工具类
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+// Apple风格动画关键帧
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+// 动画工具类
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s $spring-bounce;
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 0.4s $transition-normal;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+// 毛玻璃效果工具类
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,115 @@
+// Apple Design System 颜色变量
+$primary-color: #007AFF;        // iOS蓝色
+$primary-hover: #0056CC;        // iOS蓝色悬停
+$primary-active: #004499;       // iOS蓝色激活
+
+$secondary-color: #5856D6;      // iOS紫色
+$secondary-hover: #4B4ACF;      // iOS紫色悬停
+
+$danger-color: #FF3B30;         // iOS红色
+$warning-color: #FF9500;        // iOS橙色
+$info-color: #5AC8FA;           // iOS浅蓝色
+$success-color: #34C759;        // iOS绿色
+
+// Apple特色渐变色
+$gradient-blue: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+$gradient-purple: linear-gradient(135deg, #5856D6 0%, #AF52DE 100%);
+$gradient-pink: linear-gradient(135deg, #FF2D92 0%, #FF6B35 100%);
+$gradient-orange: linear-gradient(135deg, #FF9500 0%, #FF6B35 100%);
+$gradient-green: linear-gradient(135deg, #34C759 0%, #30D158 100%);
+$gradient-teal: linear-gradient(135deg, #5AC8FA 0%, #007AFF 100%);
+
+// 文字颜色 (Apple Human Interface Guidelines)
+$text-color: #1D1D1F;           // 主要文字
+$text-color-secondary: #86868B; // 次要文字
+$text-color-tertiary: #C7C7CC;  // 三级文字
+$text-color-placeholder: #C7C7CC; // 占位符文字
+$text-color-white: #FFFFFF;     // 白色文字
+$text-color-light: #F2F2F7;     // 浅色文字
+
+// 背景颜色 (Apple系统色彩)
+$bg-color: #F2F2F7;            // 系统背景色
+$bg-color-white: #FFFFFF;       // 纯白背景
+$bg-color-secondary: #F2F2F7;   // 次要背景
+$bg-color-tertiary: #FFFFFF;    // 三级背景
+$bg-color-card: rgba(255, 255, 255, 0.8); // 毛玻璃卡片
+$bg-color-gray: #F2F2F7;        // 灰色背景（兼容旧变量名）
+$bg-color-dark: #1C1C1E;        // 深色背景
+
+// 边框颜色 (Apple系统分隔线)
+$border-color: rgba(60, 60, 67, 0.29);      // 默认边框
+$border-color-light: rgba(60, 60, 67, 0.18); // 浅色边框
+$border-color-dark: rgba(60, 60, 67, 0.36);  // 深色边框
+
+// Apple风格阴影系统
+$shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$shadow-md: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+$shadow-xl: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+// 圆角系统 - 降低一半
+$border-radius-xs: 2px;
+$border-radius-sm: 4px;
+$border-radius-md: 6px;
+$border-radius-lg: 8px;
+$border-radius-xl: 10px;
+$border-radius-2xl: 12px;
+$border-radius-round: 50%;
+
+// 兼容旧变量名
+$border-radius-small: $border-radius-sm;
+$border-radius-medium: $border-radius-md;
+$border-radius-large: $border-radius-lg;
+
+// Apple间距系统
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+
+// Apple字体系统 (SF Pro Display)
+$font-size-xs: 11px;    // Caption 2
+$font-size-sm: 12px;    // Caption 1
+$font-size-md: 16px;    // Body
+$font-size-lg: 18px;    // Callout
+$font-size-xl: 20px;    // Title 3
+$font-size-2xl: 22px;   // Title 2
+$font-size-3xl: 28px;   // Title 1
+$font-size-4xl: 34px;   // Large Title
+
+// 兼容旧变量名
+$font-size-xxl: $font-size-2xl;
+
+// Apple字体粗细
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+
+// 行高
+$line-height-tight: 1.2;
+$line-height-normal: 1.4;
+$line-height-relaxed: 1.6;
+$line-height-loose: 1.8;
+
+// Apple动画系统
+$transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$spring-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// Z-index层级
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+$z-index-toast: 1080;
